@@ -1,4 +1,4 @@
-# rnav5-firebase-expo
+# [PROYECTO EN CONSTRUCCIÓN]rnav5-firebase-expo 
 
 Proyecto ejemplo de React Native con Expo que implementa:
 
