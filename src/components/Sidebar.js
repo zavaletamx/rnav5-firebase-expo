@@ -13,7 +13,6 @@ import {
 	Left,
 	Text,
 	Thumbnail,
-	Title,
 } from 'native-base';
 import { AntDesign } from '@expo/vector-icons';
 import { Platform } from 'react-native';
@@ -46,7 +45,7 @@ const Sidebar = (props) => {
 							circular
 							source={{
 								uri:
-									'https://lh3.googleusercontent.com/fife/ABSRlIq3k2ZggKwT4bfh8FPWO0K2PVLCNffjqbz_AHH6DAMjqq8syt0DmoZ1nADhxsGMw8rJIowefHhV70nJ5ckyFQi51RXEvaW8bPYMp5cqbWDYfQNSbVwQ5nC3CVgcx98XwwAaO0Z50bstqHrT2RH-8a-gnfWR0lOWgXWa5SQpEUCTqflf3SCmb4s5K3jfK9mRZ0YaN23blGFkPiq4yR3accCtQaGSyjp5sYOd3BdO8cF8qqT2DqRqdeJr4u9aXjaz2rw-QSYcR409W8n_J9ZEiahH4CQlVWO_1EkXom3Li8pDxzjazNmCKpDTjrIRrtefwOL_It3D7fPJm0an7bCvzDr85uEWBBMlXAJRTcWb79OeicvKFzD_WJNM5yZtyll3XHoUX7mm-ZqMA88SyWFfTaW6gLZHT7SdwY4Hl8grTq5y6UOe6KQTli10POijFJwTytrlNieTk4sNK8_FHJNCNDx16-bhwEXAyEJ_1kbPnLUCAHId0Mck-QFjJhtWG6S1KZy0K-O3i6MLYKN0eZTZnymiYBtGlS5ayHJen6oqfmYbqDvrkkpkuC1H-5e15vnS-lG34Ftc376EfUhRgG-NfZYZLrDih63gfFv6qw50NyCHm55zyknq6WJNdKG1JlDgyVt9rtXtCVRxkOZ2MigbBvRAhyShcgUxWsFRRTGHVDzD5ehbuFoB3CCJGH0fkkZufwzEtg9qyKl7jTYQiZ9ACYaQAHMaxNffFy373JIdTjfgOWo=s83-c',
+									'https://firebasestorage.googleapis.com/v0/b/expo-firebase-f29b9.appspot.com/o/images%2FChewSq.jpg?alt=media&token=fcc2aa12-a2be-4c31-bfbd-3cafa1335e2b',
 							}}
 						/>
 					</Left>
@@ -111,6 +110,26 @@ const Sidebar = (props) => {
 					label='Mi perfíl'
 					onPress={() => {
 						navigation.navigate('Perfil');
+					}}
+				/>
+
+				<DrawerItem
+					style={{
+						borderTopColor: '#000',
+						borderTopWidth: 1,
+						paddingTop: 10,
+						marginTop: 40,
+					}}
+					icon={({ color, size }) => (
+						<AntDesign
+							name='poweroff'
+							color={color}
+							size={size}
+						/>
+					)}
+					label='Cerrar Sesión'
+					onPress={() => {
+						navigation.navigate('Login');
 					}}
 				/>
 			</DrawerContentScrollView>
